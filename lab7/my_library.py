@@ -1,3 +1,19 @@
+def task7_1():
+    import math
+    n = 5
+    x = [1.0, 2.0, 3.0, 4.0, 5.0, 7.0]
+    y = 0
+    for i in range(1, n + 1):
+        y += (-1) ** i * x[i - 1]
+    print(f'f = {y}')
+
+    s = 0
+    for i in range(1, n + 1):
+        s += x[i - 1] ** 2
+    p = math.sqrt(s)
+    print(f'p = {p}')
+
+
 def task7_2(arr):
     n = len(arr)
     if n < 2:
@@ -110,6 +126,5 @@ def task7_6():
     print(unique_consonant)
 
 
-task7_6()
 
 

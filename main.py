@@ -7,7 +7,7 @@
 """
 
 
-from lab7.my_library import task7_2, task7_3
+from lab7.my_library import task7_2, task7_3, task7_1
 
 
 def menu():
@@ -30,14 +30,17 @@ if __name__ == '__main__':
         match choice:
 
             case 1:
-                logical_array = [True, False, True, False, True]
-                new_array = task7_2(logical_array)
-                print(new_array)
+                task7_1()
+
             case 2:
+                logical_array = [True, False, True, False, True]
+                print(task7_2(logical_array))
+
+            case 3:
 
                 task7_3()
 
-            case 3:
+            case 4:
                 pass
             case _:
                 break
